@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="bg-zinc-900 grid xl:grid-cols-8 sm:grid-cols-3 xs:grid-cols-2 gap-1">
+        {% for pair in exchangePairs %}
+            {% include '_parts/exchangePair.twig' with {'pair': pair}  %}
+        {% endfor %}
+    </div>
+
+{% endblock %}

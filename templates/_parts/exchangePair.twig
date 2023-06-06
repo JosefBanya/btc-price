@@ -1,0 +1,23 @@
+<div id="{{ pair.getSymbol() }}" class="flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 md:max-w-xl md:flex-row m-3">
+    <div class="flex flex-col justify-start p-6 m-2">
+        <h5 id="name" class="mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50">
+            {{ pair.getName() }}
+        </h5>
+        <p class="text-base text-neutral-600 dark:text-neutral-200">
+            Last price
+        </p>
+        <p id="price" class="mb-2 text-base text-neutral-600 dark:text-neutral-200">
+            {{ pair.getPrice() }}
+        </p>
+        <p class=" text-base text-neutral-600 dark:text-neutral-200">
+            Sell
+        </p>
+        <p id="sell" class="mb-2 text-base text-neutral-600 dark:text-neutral-200">
+            {{ pair.getSell() }}
+        </p>
+        <p  class="text-base text-neutral-600 dark:text-neutral-200">
+            Buy
+        </p>
+        <p id="buy" class="text-base text-neutral-600 dark:text-neutral-200">{{ pair.getBuy() }}</p>
+    </div>
+</div>
